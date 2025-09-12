@@ -1,5 +1,8 @@
 django==3.2
 Pillow
 mysqlclient
+<<<<<<< HEAD
 django-admin-tailwind==0.0.16
+=======
+>>>>>>> origin/main
 # djangorestframework==3.12.4
