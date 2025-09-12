@@ -11,11 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-<<<<<<< HEAD
 import os
-=======
-
->>>>>>> origin/main
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -35,11 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-<<<<<<< HEAD
     'web',
     'django_admin_tailwind',
-=======
->>>>>>> origin/main
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -63,11 +56,11 @@ ROOT_URLCONF = 'edshop.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-<<<<<<< HEAD
+
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
-=======
+
         'DIRS': [],
->>>>>>> origin/main
+
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -86,7 +79,7 @@ WSGI_APPLICATION = 'edshop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-<<<<<<< HEAD
+
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
@@ -102,14 +95,15 @@ DATABASES = {
         'PASSWORD': '',
         'HOST': '127.0.0.1',
         'PORT': '3306',
-=======
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
->>>>>>> origin/main
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+
+#     }
+# }
 
 
 # Password validation
@@ -134,15 +128,10 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-<<<<<<< HEAD
+
 LANGUAGE_CODE = 'es-es'
 
 TIME_ZONE = 'America/Caracas'
-=======
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
->>>>>>> origin/main
 
 USE_I18N = True
 
@@ -154,19 +143,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
-<<<<<<< HEAD
+STATIC_URL = 'static/'
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-=======
->>>>>>> origin/main
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-<<<<<<< HEAD
+
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-=======
->>>>>>> origin/main
